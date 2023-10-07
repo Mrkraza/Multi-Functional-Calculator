@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Simple Calculator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body onload="showTime()">
+  <div class="theme_time">
+    <a draggable="false" href="https://youtube.com/@developerRaza.?si=4uHP7oIhcedSgI1o">
+      <img src="Logo.jpg" alt="Logo" class="Logo" draggable="false" />
+    </a>
+    <h1 id="clock" onmouseenter="modify()" onmouseleave="unmodify()"></h1>
+    <button id="theme">Dark</button><br />
+  </div>
+  <div class="container">
+    <h1 class="heading">Multi Functional Calculator</h1>
+
+    <label for="first" id="fs">Enter First Addend</label><br /><br />
+    <input type="number" name="first" id="first" required placeholder="Enter The Value"
+      style="margin-top: 10px" /><br /><br />
+    <label for="operator" id="oprt">Choose Operator</label><br />
+    <select name="operator" id="operator" required style="margin-top: 10px" onchange="changeInputType()">
+      <option value="+">Addition(+)</option>
+      <option value="-">Subtraction(-)</option>
+      <option value="×">Multiplication(×)</option>
+      <option value="/">Division(/)</option>
+      <option value="%">Modulo(%)</option>
+      <option value="pow">Power of X</option>
+      <option value="disc">Discount(%)</option>
+      <option value="sqrt">Square Root</option>
+      <option value="abso">Absolte Value</option>
+      <option value="age">Age Calculate</option>
+      <option value="gst">GST Calculate</option>
+      <option value="date">Date Calculate</option>
+      <option value="loan">Loan Calculate</option>
+      <option value="dte">Date Of Birth Calculation</option>
+    </select>
+    <br /><br />
+    <label for="second" id="sc">Enter Second Addend</label><br /><br />
+    <input type="number" name="" id="second" required placeholder="Enter The Value" /><br /><br />
+    <label for="res" id="clc">Sum</label><br /><br />
+    <input type="text" readonly="" id="res" placeholder="Result Box" />
+    <p id="savePrice"></p>
+    <button onclick="cal()" id="btn">Calculate</button>
+  </div>
+  <footer class="footer" draggable="false">
+    <p id="foot" draggable="false">
+      Copyright ©
+      <a class="myName" style="color: white" href="https://www.instagram.com/ig_muhammad_raza/" draggable="false">Md
+        Raza</a>
+      | All Rights Reserved
+    </p>
+  </footer>
+</body>
+<script src="index.js"></script>
+
+<!-- Function to disable Mouse Right Click Button starts-->
+<!-- <script>
+  document.addEventListener("contextmenu", (event) => event.preventDefault());
+</script> -->
+<!-- Function to disable Mouse Right Click Button ends-->
+
+<!-- Code for Press Keyboars Enter Button -->
+<script src="index.js"></script>
+
+<!-- Code for Press Enter Keyboard Operators -->
+<script src="index.js"></script>
+
+</html>

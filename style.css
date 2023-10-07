@@ -1,0 +1,212 @@
+* {
+  font-size: 16px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding-bottom: 10px;
+  text-align: center;
+  padding-top: 10px;
+  border-radius: 8px;
+  outline: none;
+}
+
+.container {
+  border: 2.5px solid black;
+  padding: 20px;
+  margin: 15px auto;
+}
+
+.heading {
+  font-size: 1.5rem;
+}
+
+#clock {
+  display: inline;
+  padding-right: 0px;
+}
+
+.theme_time {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 5px;
+  background-color: #333333;
+  color: #fff;
+}
+
+#first {
+  margin-top: 50px;
+  border: 2.9px solid blue;
+}
+
+#fs {
+  font-size: 20px;
+}
+
+#second {
+  border: 2.9px solid blue;
+}
+
+#sc {
+  font-size: 20px;
+}
+
+#oprt {
+  font-size: 20px;
+}
+
+#clc {
+  font-size: 20px;
+}
+
+#res {
+  border: 2.9px solid green;
+}
+
+#btn {
+  border: none;
+  background-color: #192AA0;
+  color: white;
+}
+
+#btn:active {
+  background-color: #1e7b9f;
+  transition: all 0.3s;
+}
+
+#operator {
+  border: 2.3px solid violet;
+}
+
+#theme {
+  border-radius: 50%;
+  width: 43px;
+  height: 43px;
+  font-size: 13px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  padding: 5px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  border: 4px dotted black;
+  background: transparent;
+  border-top: 4px dotted purple;
+  border-right: 4px dotted green;
+  border-bottom: 4px dotted cyan;
+  border-left: 4px dotted red;
+  color: white;
+}
+
+#theme:hover {
+  background: transparent;
+  border-left-color: purple;
+  border-right-color: cyan;
+  border-top-color: green;
+  border-bottom-color: red;
+  transition: all 1s linear;
+}
+
+.footer {
+  background-color: #333333;
+  color: #fff;
+}
+
+#foot a {
+  color: white;
+  text-decoration: none;
+}
+
+.myName:hover {
+  color: red;
+  background: transparent;
+  padding: 5px;
+  border: 1.7px solid red;
+}
+
+/* For Phones */
+@media only screen and (min-width: 393px) {
+  .theme_time {
+    justify-content: space-evenly;
+  }
+
+  img {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    border-radius: 25%;
+  }
+
+  #theme {
+    width: 40px;
+    height: 40px;
+    padding-right: 30px;
+  }
+}
+
+/* For Also Phones */
+@media only screen and (min-width: 415px) {
+  .theme_time {
+    justify-content: space-evenly;
+  }
+
+  .container {
+    border: 2.5px solid black;
+    padding: 20px;
+    margin: 15px auto;
+    width: 380px;
+  }
+
+  .theme_time img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+}
+
+/* For Tabs */
+@media (max-width: 768px) {
+  .theme_time {
+    justify-content: space-evenly;
+  }
+
+  img {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    border-radius: 25%;
+  }
+
+  #theme {
+    width: 40px;
+    height: 40px;
+    padding-right: 30px;
+  }
+}
+
+/* For Laptop */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .footer {
+    margin-top: 98px;
+  }
+
+  .container {
+    margin-top: 195px;
+    border: 2.5px solid black;
+    width: 500px;
+    height: 700px;
+    /* padding-bottom: 5px; */
+  }
+}
+
+/* For DeskTop */
+@media (min-width: 1025px) {
+  .footer {
+    margin-top: 98px;
+  }
+
+  .container {
+    margin-top: 195px;
+    border: 2.5px solid black;
+    width: 500px;
+    height: 600px;
+  }
+}
